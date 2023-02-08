@@ -4,10 +4,10 @@ import Box from "@mui/material/Box";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
-	{ field: "id", headerName: "ID", width: 90 },
+	{ field: "id", headerName: "ID", width: 70 },
 	{
 		field: "name",
-		headerName: "Full name",
+		headerName: "Full Name",
 		width: 150,
 		editable: true,
 	},
@@ -20,7 +20,7 @@ const columns: GridColDef[] = [
 	{
 		field: "body",
 		headerName: "Details",
-		width: 150,
+		width: 300,
 		editable: true,
 	},
 ];

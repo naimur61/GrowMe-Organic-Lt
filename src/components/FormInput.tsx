@@ -13,6 +13,7 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import Visibility from "@mui/icons-material/Visibility";
 import logo from "../assets/GrowMeOrganic-Logo-300x50.png";
 import { useNavigate } from "react-router";
+import Stack from "@mui/material/Stack";
 
 type Inputs = {
 	name: string;
@@ -50,14 +51,16 @@ const FormInput = () => {
 				width: { xs: "75%", md: "60%", lg: "30%" },
 			}}
 		>
-			{/* <Box component="image" src={logo} alt="" /> */}
-
+			<Stack justifyContent="center" padding="15px">
+				<Box component="img" src={logo} alt="Image" />
+			</Stack>
 			<Box
 				sx={{
-					fontSize: "30px",
+					fontSize: "25px",
 					fontWeight: "600",
 					textAlign: "center",
 					mb: "20px",
+					color: "GrayText",
 				}}
 			>
 				Register
