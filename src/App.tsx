@@ -1,11 +1,16 @@
 import React from "react";
-import FormInput from "./components/FormInput";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Register from "./Pages/Register";
+import Table from "./Pages/Table";
 
 const App = () => {
 	return (
-		<div>
-			<FormInput />
-		</div>
+		<Router>
+			<Routes>
+				<Route path="/" element={<Register />} />
+				<Route path="/table" element={<Table />} />
+			</Routes>
+		</Router>
 	);
 };
 
